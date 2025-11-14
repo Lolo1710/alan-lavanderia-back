@@ -4,6 +4,7 @@ import { db } from "./db.js";
 import bcrypt from "bcrypt";
 import nodemailer from "nodemailer";
 import jwt from "jsonwebtoken";
+import path from "path";
 
 const app = express();
 app.use(express.json());
