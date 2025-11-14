@@ -8,7 +8,9 @@ import path from "path";
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    ["https://alan-web-0dsvdy-01e447-72-60-121-26.traefik.me"]
+));
 
 const ROLE_CLIENTE = 3;
 const JWT_SECRET = "supersecreto123";
