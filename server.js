@@ -8,8 +8,9 @@ import path from "path";
 
 const app = express();
 app.use(express.json());
-app.use(cors(
-    ["https://alan-web-0dsvdy-01e447-72-60-121-26.traefik.me"]
+app.use(cors({
+    origin: "*"
+}
 ));
 
 const ROLE_CLIENTE = 3;
